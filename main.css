@@ -23,11 +23,6 @@ h1{
 p{
     white-space: pre-line;
 }
-p::first-line{
-    font-size: 1.5em; 
-    text-align: center;
-    font-weight: 900;
-}
 #flex-columns{
    display: flex;
    flex-direction: column;
