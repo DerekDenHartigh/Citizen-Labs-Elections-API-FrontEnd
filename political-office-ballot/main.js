@@ -1,7 +1,7 @@
 "use strict";
 
 $(()=>{
-    $.get("https://michiganelections.io/api/proposals/?active_election=false&election_id=&format=json&precinct_county=&precinct_id=1217&precinct_jurisdiction=&precinct_number=&precinct_ward=", (data)=>{
+    $.get("http://michiganelections.io/api/positions/?active_election=false&election_id=&format=json&precinct_county=&precinct_id=1217&precinct_jurisdiction=&precinct_number=&precinct_ward=", (data)=>{
 
         $.each(data.results, function (n){
             let propNumber = data.results[n].name;
