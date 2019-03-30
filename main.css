@@ -1,6 +1,7 @@
 body{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-around;
     height: 100vh;
     width: 100vw;
@@ -30,7 +31,7 @@ p{
    justify-content: flex-start;
    align-items: space-around;
 }
-.proposal{
+.prop-box{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -38,3 +39,12 @@ p{
     width: 30%;
     border: solid black 1px;
 }
+    .prop-title{
+        
+    }
+    .prop-desciption{
+
+    }
+    .prop-explanation{
+
+    }
