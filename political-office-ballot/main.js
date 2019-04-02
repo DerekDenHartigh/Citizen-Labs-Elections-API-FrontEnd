@@ -11,18 +11,18 @@ $(()=>{
             let candidatePartyArray = []; // corresponding array of candidate party affiliation
                 candidateArray.forEach(child => {
                     if (child!==undefined){  // filters out undefined children from the API
-                        candidateNameArray.push(child.name);
-                        candidatePartyArray.push(child.party.name);
+                        candidateNameArray.push(child.name);  // fills candidateNameArray with candidate names
+                        candidatePartyArray.push(child.party.name);// fills candidatePartyArray with candidate party affiliations
                     }
                 });
             
 
             console.warn(child);
-            console.log(office);  // good
+            console.log(office);
             console.warn(candidateArray);
             console.log(candidateNameArray);
             console.warn(candidatePartyArray);
-            // $("#flex-columns").append(`<div class="prop-box" id="prop${n}-box"></div>`);
+            $("#partisan-offices-box").append(`<div class="prop-box" id="prop${n}-box"></div>`);
             // $(`#prop${n}-box`).append(`<h1 class="prop-title" id="prop${n}-title">Proposal ${propNumber}</h1><br>`);
             // $(`#prop${n}-box`).append(`<h1 class="prop-description" id="prop${n}-description">${propSummary}</h1>`);
             // $(`#prop${n}-box`).append(`<p class="prop-explanation" id="prop${n}-explanation">${propDescriptionArray.join("\n")}</p>`);
