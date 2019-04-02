@@ -3,8 +3,8 @@ body{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    height: 100vh;
-    width: 100vw;
+    height: 17in;
+    width: 11in;
     margin-left: 15px;
     margin-top: 15px;
 }
