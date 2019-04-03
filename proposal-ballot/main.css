@@ -1,15 +1,11 @@
 body{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    height: 100vh;
-    width: 100vw;
-    margin-left: 15px;
-    margin-top: 15px;
+    margin: 0 auto;
+    height: 17in;
+    width: 11in;
+    font-size: 1.2em;
+    border: solid black 1px;
 }
 header{
-    width: 30%;
     font-size: 1.5em;
     font-weight: 900;
     text-align: center;
@@ -21,24 +17,63 @@ h1{
     text-align: center;
     font-weight: 900;
 }
+#instructions-header{
+    text-decoration: underline;
+    line-height: 1.5em;
+}
 p{
     white-space: pre-line;
 }
-#flex-columns{
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   justify-content: flex-start;
-   align-items: space-around;
+hr{
+    border: solid black .5px;
+    /* width: calc(100%+10px); */
+    background-color: black;
+    /* margin: 0px -5px; */
 }
-.prop-box{
+.yes-no{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+    width: 33%;
+    padding: 3px;
+}
+.oval{
+    height: 20px;
+    width: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.flex-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+}
+#columns{
+    height: 100%;
+    columns: 3;
+    -webkit-columns: 3;
+        -moz-columns: 3;
+            columns: 3;
+    -webkit-column-rule: 1px solid black;
+        -moz-column-rule: 1px solid black;
+            column-rule: 1px solid black;
+    column-gap: 0px;
+    column-fill: auto;
+}
+.padding{
+    padding: 0px 15px;
+}
+/* .prop-box{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: flex-start;
-    width: 30%;
+    width:;
     border: solid black 1px;
-}
+} */
     .prop-title{
         
     }
