@@ -1,7 +1,7 @@
 body{
+    margin: 0 auto;
     height: 17in;
     width: 11in;
-    margin: 15px;
     font-size: 1.2em;
     border: solid black 1px;
 }
@@ -61,6 +61,7 @@ hr{
         -moz-column-rule: 1px solid black;
             column-rule: 1px solid black;
     column-gap: 0px;
+    column-fill: auto;
 }
 .padding{
     padding: 0px 15px;
